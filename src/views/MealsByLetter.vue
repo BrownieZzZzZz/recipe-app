@@ -1,7 +1,7 @@
 <template>
-    <div class="flex gap-2 mt-2 justify-center">
+    <div class="flex flex-wrap gap-2 mt-2 justify-center">
         <router-link
-            class="text-2xl hover:text-orange-400"
+            class="lg:text-2xl  hover:text-orange-400"
             exactActiveClass="text-3xl text-orange-400 animate-bounce"
             :to="{name: 'byLetter', params: {letter}}"
             v-for="letter of letters"
