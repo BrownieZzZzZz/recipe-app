@@ -48,7 +48,7 @@
                 <div class="mb-4">
                     <YoutubeButton :href="meal.strYoutube">Youtube</YoutubeButton>
                     <a
-                        :href="href" 
+                        :href="meal.strSource" 
                         target="_blank"
                         class="ml-3 px-3 py-2 rounded border-2 border-transparent text-gray-600 hover:bg-gray-600 hover:text-white  transition-colors">
                         View Original Source
@@ -72,6 +72,7 @@ const baseUrl = inject('baseUrl');
 onMounted(async () => {
     const result = await axios.get(baseUrl + `/lookup.php?i=${route.params.id}`)
     meal.value = result.data.meals[0] || {};
+    console.log(meal.strSource)
 })
 
 </script>
