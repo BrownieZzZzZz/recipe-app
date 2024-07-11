@@ -15,11 +15,11 @@
             :meal="meal"
         />
     </div>
-    <div v-else-if="didntSearch" class="text-8xl pt-10 text-center text-orange-300 ">
+    <div v-else-if="didntSearch" class="text-2xl pt-10 text-center text-orange-300 ">
         NO SEARCHES MADE YET !
 
     </div>
-    <div v-else class="text-8xl pt-10 text-center text-orange-300">
+    <div v-else class="text-2xl pt-10 text-center text-orange-300">
         NO MEALS FOUND !
     </div>
 </template>
